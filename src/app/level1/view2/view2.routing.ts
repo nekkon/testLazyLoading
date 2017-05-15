@@ -1,20 +1,15 @@
-import { BrowserModule } from '@angular/platform-browser';
+import { CommonModule } from '@angular/common';
 import { NgModule } from '@angular/core';
-import { FormsModule } from '@angular/forms';
-import { HttpModule } from '@angular/http';
 
-import { AppComponent } from './app.component';
+import { view2Component } from './view2.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    view2Component
   ],
   imports: [
-    BrowserModule,
-    FormsModule,
-    HttpModule
+    CommonModule
   ],
-  providers: [],
-  bootstrap: [AppComponent]
+  providers: []
 })
 export class AppModule { }
