@@ -1,10 +1,6 @@
 import { Routes }    from '@angular/router';
-import { view3Component } from './view3.component';
 
 export const routes: Routes = [
-    { path:'', component: view3Component, 
-        //canActivateChild: [CanActivateRoute],
-        children: [
             { 
                 path: '',   
                 redirectTo: '/view3_1', 
@@ -20,6 +16,4 @@ export const routes: Routes = [
                 loadChildren: 'app/level1/view3/view3_2/view3_2.module#view3_2Module',
                 outlet: 'view'
             }
-        ]
-    }
-];
+        ];
