@@ -1,15 +1,9 @@
-import { CommonModule } from '@angular/common';
-import { NgModule } from '@angular/core';
-
+import { Routes } from '@angular/router';
 import { view2Component } from './view2.component';
 
-@NgModule({
-  declarations: [
-    view2Component
-  ],
-  imports: [
-    CommonModule
-  ],
-  providers: []
-})
-export class AppModule { }
+export const routes: Routes = [
+    { 
+      path: '', 
+      component: view2Component
+    }
+];
