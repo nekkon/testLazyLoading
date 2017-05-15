@@ -1,20 +1,9 @@
-import { BrowserModule } from '@angular/platform-browser';
-import { NgModule } from '@angular/core';
-import { FormsModule } from '@angular/forms';
-import { HttpModule } from '@angular/http';
+import { Routes }    from '@angular/router';
 
-
-
-@NgModule({
-  declarations: [
-    AppComponent
-  ],
-  imports: [
-    BrowserModule,
-    FormsModule,
-    HttpModule
-  ],
-  providers: [],
-  bootstrap: [AppComponent]
-})
-export class AppModule { }
+export const routes: Routes = [
+  { path: '',   redirectTo: '/view1', pathMatch: 'full' },
+  { path: 'view1', loadChildren: 'app/level1/view1/view1.module#view1Module' },
+  { path: 'view2', loadChildren: 'app/level1/view2/view2.module#view2Module' },
+  { path: 'level3', loadChildren: 'app/level1/level2/level3.module#level3Module' },
+  { path: '**', loadChildren: 'app/level1/view2/view2.module#view2Module' }
+];
