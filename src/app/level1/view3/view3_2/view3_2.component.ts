@@ -1,10 +1,10 @@
 import { Component } from '@angular/core';
 
 @Component({
-  selector: 'view3_2',
-  templateUrl: './view3_2.component.html',
-  styleUrls: ['./view3_2.component.css']
+  selector: 'view3',
+  templateUrl: './view3.component.html',
+  styleUrls: ['./view3.component.css']
 })
-export class view3_2Component {
+export class view3Component {
   title = 'app works!';
 }

@@ -1,19 +1,22 @@
 import { Routes }    from '@angular/router';
+import { level2Component } from './level2.component';
 
 export const routes: Routes = [
-            { 
-                path: '',   
-                redirectTo: '/view3_2_1', 
-                pathMatch: 'full' 
-            },
+  { path: '', redirectTo: '/level2Component', pathMatch: 'full' },
+    { path:'view3', component: level2Component, 
+        //canActivateChild: [CanActivateRoute],
+        children: [
             {
-                path: 'view3_2_1',
-                loadChildren: 'app/level1/view3/view3_2/view3_2_1.module#view3_2_1Module',
+                path: '',
+                loadChildren: 'app/level1/view1/view1.module#view1Module',
                 outlet: 'view'
             },
             {
-                path: 'view3_2_2',
-                loadChildren: 'app/level1/view3/view3_2/view3_2_2.module#view3_2_2Module',
+                path: 'incoming',
+                loadChildren: 'app/level1/view2/view2.module#view2Module',
                 outlet: 'view'
             }
-        ];
+        ]
+    },
+
+];
