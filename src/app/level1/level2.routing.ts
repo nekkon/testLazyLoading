@@ -1,45 +1,26 @@
 import { Routes }    from '@angular/router';
+import { level2Component } from './level2.component';
 
 export const routes: Routes = [
-  { path: '', redirectTo: '/view1', pathMatch: 'full' },
-    { path:'view1', component: LoginPage },
-    { path:'level3', component: level3Component, 
-        canActivateChild: [CanActivateRoute],
+  { path: '', redirectTo: '/level2Component', pathMatch: 'full' },
+    { path:'level3', component: level2Component, 
+        //canActivateChild: [CanActivateRoute],
         children: [
             {
                 path: '',
-                component: IncomingPage,
+                redirectTo: 'view1',
+                pathMatch: 'full',
                 outlet: 'view'
             },
             {
-                path: 'incoming',
-                component: IncomingPage,
+                path: 'view1',
+                loadChildren: 'app/level1/view1/view1.module#view1Module',
                 outlet: 'view'
             },
             {
-                path: 'outstanding',
-                component: OutstandingPage,
+                path: 'view2',
+                loadChildren: 'app/level1/view2/view2.module#view2Module',
                 outlet: 'view'
-            },
-            {
-                path: 'draft',
-                component: DraftPage,
-                outlet: 'view'
-            },
-            {
-                path: 'completed',
-                component: CompletedPage,
-                outlet: 'view'
-            },
-            {
-                path: 'new',
-                component: NewDocPage,
-                outlet: 'view'
-            },
-            { 
-                path:'**', 
-                component: Four04Page, 
-                outlet: 'view' 
             }
         ]
     },

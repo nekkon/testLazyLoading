@@ -12,6 +12,9 @@ import { routes } from './level2.routing';
     CommonModule,
     RouterModule.forChild(routes)
   ],
-  providers: []
+  providers: [],
+  exports:[
+    level2Component
+  ]
 })
 export class level2Module { }
