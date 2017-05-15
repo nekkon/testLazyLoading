@@ -2,11 +2,11 @@ import { CommonModule } from '@angular/common';
 import { NgModule } from '@angular/core';
 import { RouterModule }    from '@angular/router';
 
-import { level2Component } from './level2.component';
-import { routes } from './level2.routing';
+import { view3Component } from './view3.component';
+import { routes } from './view3.routing';
 @NgModule({
   declarations: [
-    level2Component
+    view3Component
   ],
   imports: [
     CommonModule,
@@ -14,7 +14,7 @@ import { routes } from './level2.routing';
   ],
   providers: [],
   exports:[
-    level2Component
+    view3Component
   ]
 })
-export class level2Module { }
+export class view3Module { }
