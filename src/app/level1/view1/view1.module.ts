@@ -10,7 +10,7 @@ import { routes } from './view1.routing';
   ],
   imports: [
     CommonModule,
-    RouterModule.forRoot(routes)
+    RouterModule.forChild(routes)
   ],
   providers: []
 })

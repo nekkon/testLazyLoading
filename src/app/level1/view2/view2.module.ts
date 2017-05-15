@@ -11,8 +11,8 @@ import { routes } from './view2.routing';
   ],
   imports: [
     CommonModule,
-    RouterModule.forRoot(routes)
+    RouterModule.forChild(routes)
   ],
   providers: []
 })
-export class view1Module { }
+export class view2Module { }
