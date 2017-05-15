@@ -14,4 +14,4 @@ import { routes } from './level2.routing';
   ],
   providers: []
 })
-export class view1Module { }
+export class level2Module { }
