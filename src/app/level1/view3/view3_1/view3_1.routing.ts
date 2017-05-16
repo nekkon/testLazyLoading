@@ -4,7 +4,8 @@ export const routes: Routes = [
             { 
                 path: '',   
                 redirectTo: '/view3_1_1', 
-                pathMatch: 'full' 
+                pathMatch: 'full',
+                outlet: 'view'
             },
             {
                 path: 'view3_1_1',
