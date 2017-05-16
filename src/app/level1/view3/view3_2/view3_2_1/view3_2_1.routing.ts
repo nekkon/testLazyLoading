@@ -1,6 +1,6 @@
 import { Routes }    from '@angular/router';
-import { view3_1_2Component } from './view3_1_2.component';
+import { view3_2_1Component } from './view3_2_1.component';
 
 export const routes: Routes = [
-    { path:'', component: view3_1_2Component}
+    { path:'', component: view3_2_1Component}
 ];

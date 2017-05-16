@@ -17,4 +17,4 @@ import { routes } from './view3_1_2.routing';
     view3_1_2Component
   ]
 })
-export class view3Module { }
+export class view3_1_2Module { }
