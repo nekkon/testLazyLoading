@@ -1,12 +1,6 @@
 import { Routes }    from '@angular/router';
+import { view3_2Component } from './view3_2.component';
 
 export const routes: Routes = [
-    {
-        path: 'view3_2_1',
-        loadChildren: 'app/level1/view3/view3_2/view3_2_1/view3_2_1.module#view3_2_1Module'
-    },
-    {
-        path: 'view3_2_2',
-        loadChildren: 'app/level1/view3/view3_2/view3_2_2/view3_2_2.module#view3_2_2Module'
-    }
+    { path:'', component: view3_2Component}
 ];
