@@ -14,7 +14,8 @@ import { routes } from './view3.routing';
   ],
   providers: [],
   exports:[
-    view3Component
+    view3Component,
+    RouterModule
   ]
 })
 export class view3Module { }

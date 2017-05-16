@@ -13,6 +13,8 @@ import { routes } from './view2.routing';
     CommonModule,
     RouterModule.forChild(routes)
   ],
-  providers: []
+  exports: [
+    RouterModule
+  ]
 })
 export class view2Module { }

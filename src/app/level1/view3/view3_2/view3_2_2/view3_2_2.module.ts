@@ -14,7 +14,8 @@ import { routes } from './view3_2_2.routing';
   ],
   providers: [],
   exports:[
-    view3_2_2Component
+    view3_2_2Component,
+    RouterModule
   ]
 })
 export class view3_2_2Module { }
