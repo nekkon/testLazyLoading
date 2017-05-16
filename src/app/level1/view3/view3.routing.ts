@@ -6,6 +6,12 @@ export const routes: Routes = [
         path:'',
         component: view3Component,
         children: [
+            { 
+                path: '',   
+                redirectTo: 'view3_1', 
+                pathMatch: 'full',
+                outlet: 'view'
+            },
             {
                 path: 'view3_1',
                 loadChildren: 'app/level1/view3/view3_1/view3_1.module#view3_1Module',
